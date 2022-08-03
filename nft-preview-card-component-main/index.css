@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+:root {
+  --Very-dark-blue-bg: hsl(217, 54%, 11%);
+  --Very-dark-blue-card-bg: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --fs-body: calc(14 / 16 * 1rem);
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: var(--fs-body);
+  background-color: var(--Very-dark-blue-bg);
+}
+.card {
+  width: 250px;
+  padding: 15px;
+  background-color: var(--Very-dark-blue-card-bg);
+  box-shadow: 0 0 30px rgb(7, 14, 24);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.image {
+  position: relative;
+}
+#top-img {
+  border-radius: 8px;
+  max-width: 100%;
+  display: block;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(178, 100%, 50%, 0.5);
+  display: none;
+}
+.overlay img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.image:hover .overlay {
+  display: inline-block;
+  cursor: pointer;
+}
+.heading {
+  color: var(--White);
+  padding: 20px 0;
+  font-size: 600;
+  cursor: pointer;
+}
+.heading:hover {
+  color: var(--Cyan);
+}
+.paragraph {
+  font-size: smaller;
+  padding-bottom: 20px;
+  color: var(--Soft-blue);
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /* padding-bottom: 10px; */
+}
+.eth,
+.days {
+  display: flex;
+  align-items: center;
+}
+.eth p,
+.days p {
+  margin-left: 5px;
+  font-size: smaller;
+}
+.eth p {
+  color: var(--Cyan);
+}
+.days p {
+  color: var(--Soft-blue);
+}
+hr {
+  margin: 15px 0;
+  border: 1px solid var(--Soft-blue);
+  border-radius: 8px;
+  outline: none;
+}
+.author {
+  display: flex;
+  align-items: center;
+}
+.author img {
+  width: 30px;
+  border: 0.5px solid var(--White);
+  border-radius: 50%;
+}
+.author p {
+  color: var(--Soft-blue);
+  font-size: small;
+  margin-left: 10px;
+}
+.author a {
+  text-decoration: none;
+  color: var(--White);
+  cursor: pointer;
+}
+.author a:hover{
+  color: var(--Cyan);
+}
