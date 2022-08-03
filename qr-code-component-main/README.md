@@ -38,4 +38,4 @@ body {
 
 ### Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/withmohitjoshi)
+- Frontend Mentor - [@withmohitjoshi](https://www.frontendmentor.io/profile/withmohitjoshi)
