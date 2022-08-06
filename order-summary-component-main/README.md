@@ -16,7 +16,7 @@ This is a solution to the [Order summary card challenge on Frontend Mentor](http
 
 ### Links
 
-- Live Site URL: [QR Code Component Main](https://withmohitjoshi.github.io/FrontendMentor-Projects/order-summary-component-main/)
+- Live Site URL: [Order Summary Component Main](https://withmohitjoshi.github.io/FrontendMentor-Projects/order-summary-component-main/)
 
 ### Built with
 
