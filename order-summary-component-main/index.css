@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+:root {
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+  --fs-heading: calc(18 / 16 * 1rem);
+  --fs-paragraph: calc(11 / 16 * 1rem);
+  --fs-button: calc(10 / 16 * 1rem);
+}
+@media screen and (max-width: 375px) {
+  :root {
+    --fs-heading: calc(20 / 16 * 1rem);
+    --fs-paragraph: calc(13 / 16 * 1rem);
+    --fs-button: calc(12 / 16 * 1rem);
+  }
+  .card {
+    width: 300px;
+  }
+  .body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+}
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Very-pale-blue);
+  background-image: url("./images//pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+  background-position: top;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  background-color: #fff;
+  box-shadow: 0 0 50px 0.05rem rgb(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: center;
+}
+.top-img {
+  width: 100%;
+  display: inline-block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.inner-box {
+  padding: 20px 25px 15px 25px;
+}
+.heading {
+  color: var(--Dark-blue);
+  margin-bottom: 10px;
+  font-weight: 900;
+  font-size: var(--fs-heading);
+}
+.paragraph {
+  font-size: var(--fs-paragraph);
+  margin-bottom: 15px;
+  color: var(--Desaturated-blue);
+  font-weight: 500;
+}
+.price-card {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  background-color: var(--Very-pale-blue);
+  border-radius: 8px;
+}
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.price img {
+  margin-right: 10px;
+  width: 30px;
+}
+.price-card-text {
+  text-align: left;
+  font-size: 0.65rem;
+}
+.price-card-text h4 {
+  color: var(--Dark-blue);
+  font-weight: 900;
+}
+.price-card-text p {
+  font-weight: 500;
+  color: var(--Desaturated-blue);
+}
+.change-btn {
+  font-size: 0.65rem;
+  color: var(--Bright-blue);
+  font-weight: 900;
+}
+.change-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: var(--Desaturated-blue);
+}
+button {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  width: 100%;
+  cursor: pointer;
+  font-size: var(--fs-button);
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+}
+.payment-btn {
+  color: #fff;
+  background-color: var(--Bright-blue);
+  letter-spacing: 0.2px;
+  margin-bottom: 15px;
+  box-shadow: 0 1px 50px 0rem var(--Bright-blue);
+}
+.payment-btn:hover {
+  background-color: var(--Desaturated-blue);
+}
+.cancel-btn {
+  color: var(--Desaturated-blue);
+  background-color: transparent;
+
+  margin-bottom: 15px;
+}
+.cancel-btn:hover {
+  color: var(--Dark-blue);
+}
