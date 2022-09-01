@@ -4,11 +4,13 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 
 ## Table of contents
 
-- [Screenshot](#screenshot)
-- [Links](#links)
-- [Built with](#built-with)
-- [What I learned](#what-i-learned)
-- [Author](#author)
+- [Frontend Mentor - NFT preview card component solution](#frontend-mentor---nft-preview-card-component-solution)
+  - [Table of contents](#table-of-contents)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+    - [Built with](#built-with)
+    - [What I learned](#what-i-learned)
+    - [Author](#author)
 
 ### Screenshot
 
